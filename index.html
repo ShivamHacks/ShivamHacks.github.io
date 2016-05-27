@@ -4,6 +4,9 @@
 	<title>Shivam Agrawal | Full Stack Developer</title>
 
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style>
@@ -15,14 +18,19 @@
 		font-family: 'Work Sans';
 	}
 
+	#opener { background: url("./opener-background.jpeg"); }
+	#skills { background: url("./skills-background.jpeg"); }
+	#experience { background: url("./experience-background.jpeg"); }
+
 	.full-screen {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
-		height: 100%;
+		height: calc(75vh);
 		width: 100%;
 		display: table;
+		box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9);
 	}
 
 	.full-screen-content {
@@ -31,32 +39,7 @@
 		text-align: center;
 	}
 
-	.header { font-size: 5em; }
-
-	.menu-container {
-		height: 100%;
-		width: auto;
-		display: table;
-		position: fixed;
-		top: 0;
-		right: 0;
-		padding: 0 10px;
-	}
-	.menu {
-		height: auto;
-		width: auto;
-		display: table-cell;
-		vertical-align: middle;
-		text-align: right;
-	}
-	.menu-item-bullet { 
-		text-decoration: none; 
-		font-size: 2em;
-	}
-	.menu-item-description { 
-		display: none;
-	}
-
+	.header { font-size: 3em; }
 
 	/* Colors from http://clrs.cc/ */
 	.navy { color: #001f3f; }
@@ -77,7 +60,6 @@
 	.silver { color: #DDDDDD; }
 	.white { color: #FFFFFF; }
 
-
 	.top-menu {
 		width: 100%;
 		height: 10%;
@@ -87,16 +69,45 @@
 		justify-content: space-around;
 		align-items: center;
 		align-content: center;
-		position: absolute;
-		top: 0;
-		left: 0;
-		background-color: #F012BE;
 	}
 
 	.top-menu span { margin: auto; }
 	.top-menu span a { 
 		text-decoration: none; 
+	}
+
+	.content {
+		width: 90%;
+		height: auto;
+		padding: calc(5vw);
+	}
+
+	img {
+		width: 100%;
+    	height: auto;
+	}
+
+	.codebox {
+		background-color:#282828;
+		font-family: Consolas, monaco, monospace;
+		border-radius: 10px;
+		padding: 4%;
+		margin: 2%;
+		width: 88%;
+		height: auto;
+	}
+	.codebox .code-header {
+		color: #01FF70;
+		background: url("./tab.png") no-repeat;
+		background-position: left bottom;
+		background-size: cover;
+		line-height: 3em;
+	}
+	.codebox .code-text {
 		color: #FFFFFF;
+	}
+	.codebox .code-line {
+		color: #7FDBFF;
 	}
 
 	</style>
@@ -104,60 +115,122 @@
 </head>
 <body>
 
-	<div class="menu-container">
-		<div class="menu">
-			<div class="menu-item white">
-				<span class="menu-item-description">Skills</span>
-				<a href="#skills" class="menu-item-bullet white">&bull;</a>
-			</div>
-			<div class="menu-item white">
-				<span class="menu-item-description">Projects</span>
-				<a href="#projects" class="menu-item-bullet white">&bull;</a>
-			</div>
-			<div class="menu-item white">
-				<span class="menu-item-description">Experience</span>
-				<a href="#experience" class="menu-item-bullet white">&bull;</a>
-			</div>
+	<div class="top-menu">
+		<span><a href="#about">About</a></span>
+		<span><a href="#skills">Skills</a></span>
+		<span><a href="#projects">Projects</a></span>
+		<span style="font-size: 2em;">Shivam (put logo here) Agrawal</span>
+		<span><a href="#experience">Experience</a></span>
+		<span><a href="#experience">Contact</a></span>
+		<span><a href="#experience">Resume</a></span>
+	</div>
+
+	<div id="opener" class="full-screen">
+		<div class="full-screen-content">
+			<div class="header">Shivam Agrawal</div>
 		</div>
 	</div>
 
-		<div class="top-menu">
-			<span><a href="#about">About</a></span>
-			<span><a href="#skills">Skills</a></span>
-			<span style="font-size: 2em;">Shivam Agrawal</span>
-			<span><a href="#projects">Projects</a></span>
-			<span><a href="#experience">Experience</a></span>
+	<div id="about" class="content">
+		<div class="pure-g">
+    		<div class="pure-u-1-4"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/11059351_1738872126399410_1595719079244088884_n.jpg?oh=56212d92b22f5ac2571e94b887642227&oe=57DF508E"></div>
+    		<div class="pure-u-3-4"><p>Thirds</p></div>
+		</div>
 	</div>
 
-	<div class="full-screen" data-parallax="scroll" data-image-src="./skills-background.jpeg" id="skills">
+	<div class="full-screen" id="skills">
 		<div class="full-screen-content">
 			<div class="header">SKILLS</div>
 		</div>
 	</div>
 
-	<div class="full-screen" data-parallax="scroll" data-image-src="./projects-background.jpeg" id="projects">
-		<div class="full-screen-content">
-			<div class="header">PROJECTS</div>
+	<!--
+	cloud - google cloud
+	platforms: web, mobile
+	server
+	tools
+
+	langauges - nodejs, html, java
+	cloud
+	tools
+	platforms
+
+-->
+
+	<div class="content" id="skillsContent">
+		<div class="pure-g">
+    		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    			<div class="codebox">
+    				<div class="code-header">
+    					<span>Languages.js</span><br><!-- and libraries -->
+    				</div>
+    				<div class="code-text">
+    					<span class="code-line">1. </span><span>NodeJS/Express</span><br>    		
+    					<span class="code-line">2. </span><span>HTML/CSS/JS</span><br>
+    					<span class="code-line">3. </span><span>&thinsp;- JQuery</span><br>
+    					<span class="code-line">4. </span><span>&thinsp;- Bootstrap</span><br>
+    					<span class="code-line">5. </span><span>&thinsp;- Underscore</span><br>
+    					<span class="code-line">6. </span><span>Java</span>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    			<div class="codebox">
+    				<div class="code-header">
+    					<span>Cloud.js</span><br>
+    				</div>
+    				<div class="code-text">
+    					<span class="code-line">1. </span><span>Amazon Web Services</span><br>
+    					<span class="code-line">2. </span><span>&thinsp;- DynamoDB</span><br>
+    					<span class="code-line">3. </span><span>&thinsp;- S3</span><br>
+    					<span class="code-line">4. </span><span>&thinsp;- Elastic Beanstalk</span><br>
+    					<span class="code-line">5. </span><span>Google Cloud Messaging</span><br>
+    					<span class="code-line">6. </span><span>Heroku</span>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    			<div class="codebox">
+    				<div class="code-header">
+    					<span>Platforms.js</span><br>
+    				</div>
+    				<div class="code-text">
+    					<span class="code-line">1. </span><span>Web</span><br>
+    					<span class="code-line">2. </span><span>&thinsp;- Desktop</span><br>
+    					<span class="code-line">3. </span><span>&thinsp;- Mobile</span><br>
+    					<span class="code-line">4. </span><span>Android</span><br>
+    					<span class="code-line">5. </span><span>Desktop</span><br>
+    					<span class="code-line">6. </span><span>&thinsp;- Java Application</span><br>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+    			<div class="codebox">
+    				<div class="code-header">
+    					<span>Tools.js</span><br>
+    				</div>
+    				<div class="code-text">
+    					<span class="code-line">1. </span><span>Excel</span><br>
+    					<span class="code-line">2. </span><span>Github</span><br>
+    					<span class="code-line">3. </span><span>Slack</span><br>
+    					<span class="code-line">4. </span><span>Sublime Text</span><br>
+    					<span class="code-line">5. </span><span>Google Drive</span><br>
+    					<span class="code-line">6. </span>
+    				</div>
+    			</div>
+    		</div>
 		</div>
 	</div>
 
-	<div class="full-screen" data-parallax="scroll" data-image-src="./experience-background.jpeg" id="experience">
+	<div class="full-screen" id="experience">
 		<div class="full-screen-content">
-			<div class="header white">EXPERIENCE</div>
+			<div class="header">EXPERIENCE</div>
 		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-	<script src="parallax.min.js"></script>
+	<script src="jquery-1.10.2.min.js"></script>
 	
 	<script>
-	$(".menu-item-bullet")
-	.mouseenter(function() {
-		$(this).prev(".menu-item-description").fadeIn(200);
-	})
-	.mouseleave(function() {
-		$(this).prev(".menu-item-description").fadeOut(200);
-	});
 
 	// smooth scroll: https://css-tricks.com/snippets/jquery/smooth-scrolling/
 	$(function() {
@@ -179,9 +252,18 @@
 	<!-- Credits
 
 	Background images
-	- skills - https://unsplash.com/photos/EKy2OTRPXdw - Mikhail Pavstyuk
-	- projects - https://unsplash.com/photos/jLwVAUtLOAQ - Dustin Lee
+	- opener - https://unsplash.com/photos/sGblr5yVXiM - Jason Chen
+	- skills - https://unsplash.com/photos/jLwVAUtLOAQ - Dustin Lee
 	- experience - https://unsplash.com/photos/YpeBKo-iQjY - Kiley Mead
+
+
+	MAKE SURE TO LAZY LOAD IMAGES!!!
+
+	Responsive Nav Bar
+
+	Include clubs and athletics and sciences in skills section
+
+	Only show skills and experience
 
 -->
 
