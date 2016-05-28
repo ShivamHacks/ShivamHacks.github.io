@@ -7,9 +7,9 @@ html, body {
 	font-family: 'Work Sans';
 }
 
-#opener { background: url("./opener-background.jpeg"); font-family: 'Work Sans'; }
-#skills { background: url("./skills-background.jpeg"); }
-#experience { background: url("./experience-background.jpeg"); }
+#opener { background: url("./imgs/opener-background.jpeg"); font-family: 'Work Sans'; }
+#skills { background: url("./imgs/skills-background.jpeg"); }
+#experience { background: url("./imgs/experience-background.jpeg"); }
 
 .break-screen {
 	background-position: center center;
@@ -40,7 +40,7 @@ html, body {
 	top: 0;
 }
 #nav-main {
-	width: 100%;
+	width: calc(100%-4vw);
 	height: 100%;
 	position: relative;
 	left:-100%;
@@ -51,10 +51,19 @@ html, body {
 	-moz-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
 	-o-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
 	transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	padding: calc(2vw);
 }
 #nav-main.shown {
 	left:0;
 	z-index: 1000;
+}
+#nav-main span {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+#nav-main span a {
+	text-decoration: none;
+	color: #FFFFFF;
 }
 #nav-menu {
 	display: block;
@@ -108,6 +117,9 @@ img {
 .img-margin {
 	padding: calc(1vh);
 }
+.text-margin {
+	padding: calc(1vh);	
+}
 .text-center {
 	text-align: center;
 }
@@ -145,7 +157,7 @@ blockquote .author {
 }
 .codebox .code-header {
 	color: #01FF70;
-	background: url("./tab.png") no-repeat;
+	background: url("./imgs/tab.png") no-repeat;
 	background-position: left bottom;
 	background-size: cover;
 	line-height: 3em;
