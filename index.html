@@ -7,140 +7,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-	<link rel="stylesheet" href="nav.css">
-
-	
+	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<style>
-	html, body {
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		overflow-x:hidden;
-		font-family: 'Work Sans';
-	}
-
-	#opener { background: url("./opener-background.jpeg"); font-family: 'Work Sans'; }
-	#skills { background: url("./skills-background.jpeg"); }
-	#experience { background: url("./experience-background.jpeg"); }
-
-	.full-screen {
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-		height: calc(75vh);
-		width: 100%;
-		display: table;
-		box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9);
-	}
-
-	.full-screen-content {
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
-	}
-
-	.header { font-size: 3em; }
-
-	/* Colors from http://clrs.cc/ */
-	.navy { color: #001f3f; }
-	.blue { color: #0074D9; }
-	.aqua { color: #7FDBFF; }
-	.teal { color: #39CCCC; }
-	.olive { color: #3D9970; }
-	.green { color: #2ECC40; }
-	.lime { color: #01FF70; }
-	.yellow { color: #FFDC00; }
-	.orange { color: #FF851B; }
-	.red { color: #FF4136; }
-	.maroon { color: #85144b; }
-	.fuchsia { color: #F012BE; }
-	.purple { color: #B10DC9; }
-	.black { color: #111111; }
-	.gray { color: #AAAAAA; }
-	.silver { color: #DDDDDD; }
-	.white { color: #FFFFFF; }
-
-	.top-menu {
-		width: 100%;
-		height: 10%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-around;
-		align-items: center;
-		align-content: center;
-	}
-
-	.top-menu span { margin: auto; }
-	.top-menu span a { 
-		text-decoration: none; 
-	}
-
-	.content {
-		width: 90%;
-		height: auto;
-		padding: calc(5vw);
-	}
-
-	img {
-		width: 100%;
-		height: auto;
-	}
-	.img-margin {
-		padding: calc(1vh);
-	}
-	.text-center {
-		text-align: center;
-	}
-
-	.codebox {
-		background-color:#282828;
-		font-family: Consolas, monaco, monospace;
-		border-radius: 10px;
-		padding: 4%;
-		margin: 2%;
-		width: 88%;
-		height: auto;
-	}
-	.codebox .code-header {
-		color: #01FF70;
-		background: url("./tab.png") no-repeat;
-		background-position: left bottom;
-		background-size: cover;
-		line-height: 3em;
-	}
-	.codebox .code-text {
-		color: #FFFFFF;
-	}
-	.codebox .code-line {
-		color: #7FDBFF;
-	}
-
-	.font-lato { 
-		font-family:'Lato'; 
-		line-height: 1.5em;
-	}
-	.font-lg { font-size: 1.5em; }
-	.font-md { font-size: 1.2em; }
-
-	#footer { background-color: #282828; }
-
-	blockquote {
-		border-left: 4px solid #ccc;
-		padding-left: 10px;
-		font-family:'Lato';
-	}
-	blockquote .author {
-		color: #a5a4a4;
-		font-style: italic;
-		font-size: 0.8em;
-	}
-
-	</style>
 
 </head>
 <body>
@@ -149,30 +17,30 @@
 
 	<div id="nav-container">
 		<div id="nav-main">
-			<span><a href="#about">About</a></span><br>
-			<span><a href="#skills">Skills</a></span><br>
+			<span><a href="#aboutContent">About</a></span><br>
+			<span><a href="#skillsContent">Skills</a></span><br>
 			<span><a href="https://github.com/ShivamHacks" target="_blank">Projects</a></span><br>
-			<span><a href="#experience">Experience</a></span><br>
-			<span><a href="#contact">Contact</a></span><br>
+			<span><a href="#experienceContent">Experience</a></span><br>
+			<span><a href="#footer">Contact</a></span><br>
 			<span><a href="resume.pdf" target="_blank">Resume</a></span>
 		</div>
 	</div>
 
-	<div id="opener" class="full-screen">
-		<div class="full-screen-content">
+	<div id="opener" class="break-screen">
+		<div class="break-screen-content">
 			<div class="header">Shivam Agrawal</div>
 		</div>
 	</div>
 
-	<div id="about" class="content">
+	<div id="aboutContent" class="content">
 		<div class="pure-g">
 			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-4"><img src="me.jpg"></div>
 			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-3-4"><p>Thirds</p></div>
 		</div>
 	</div>
 
-	<div class="full-screen" id="skills">
-		<div class="full-screen-content">
+	<div class="break-screen" id="skills">
+		<div class="break-screen-content">
 			<div class="header">SKILLS</div>
 		</div>
 	</div>
@@ -268,18 +136,48 @@
 						<span class="code-line">6. </span>
 					</div>
 				</div>
-			</div> 		
+			</div>
+			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+				<div class="codebox">
+					<div class="code-header">
+						<span>Miscellaneous.js</span><br>
+					</div>
+					<div class="code-text">
+						<span class="code-line">1. </span><span>Public Speaking</span><br>
+						<span class="code-line">2. </span><span>Teaching</span><br>
+						<span class="code-line">3. </span><span>Tennis</span><br>
+						<span class="code-line">4. </span><span>Ping Pong</span><br>
+						<span class="code-line">5. </span><br>
+						<span class="code-line">6. </span>
+					</div>
+				</div>
+			</div> 
+			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+				<div class="codebox">
+					<div class="code-header">
+						<span>LearningNow.js</span><br>
+					</div>
+					<div class="code-text">
+						<span class="code-line">1. </span><span>Time Management</span><br>
+						<span class="code-line">2. </span><span>Machine Learning</span><br>
+						<span class="code-line">3. </span><span>Multivariable Calculus</span><br>
+						<span class="code-line">4. </span><span>IOS App Development</span><br>
+						<span class="code-line">5. </span><br>
+						<span class="code-line">6. </span>
+					</div>
+				</div>
+			</div> 
 			<!-- Don't forget to include public speaking -->
 		</div>
 	</div>
 
-	<div class="full-screen" id="experience">
-		<div class="full-screen-content">
-			<div class="header">EXPERIENCE</div>
+	<div class="break-screen" id="experience">
+		<div class="break-screen-content">
+			<div class="header white">EXPERIENCE</div>
 		</div>
 	</div>
 
-	<div class="content">
+	<div class="content" id="experienceContent">
 		<!--<div class="header text-center">Conferences and Competitions</h1><hr>-->
 		<div class="pure-g">
 			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-5"><div class="img-margin"><img src="./imgs/rumun2.jpg"></div></div>
@@ -290,28 +188,28 @@
 		</div><hr>
 
 		<div class="pure-g">
-			<div class="pure-u-1-4">
-				<div class="img-margin"><img src="./imgs/gnext.png"></div>
+			<div class="pure-u-1 pure-u-md-1-6"><div class="img-margin"><img src="./imgs/gnext.png"></div></div>
+			<div class="pure-u-1 pure-u-md-1-6 text-center">
 				<span class="font-lato font-lg">Web Developer, Organizer</span><br>
 				<span class="font-lato font-md">GNext Education</span><br>
 				<span class="font-lato">Fall 2015</span><br>
 				<span class="font-lato"><a href="http://gnextedu.com/" target="_blank">gnextedu.com</a></span>
 			</div>
-			<div class="pure-u-3-4">
+			<div class="pure-u-1 pure-u-md-2-3">
 				<span class="font-lato font-md">Created website for SALL Champs, a robotics competition hosted by GNext Education. Helped organize and run the competition.</span>
 				<blockquote>"Shivam was assigned to develop the website of our project call SALL champs (Robotics Competition), he has been working hard on this project. He has impressed us with his creativity, knowledge about the subject, taking initiatives very detailed oriented and is one hardworking individual. I wish him all the very best in his future endeavors."<br><span class="author">- Ekta Gupta, Founder of GNext Education</span></blockquote>
 			</div>
 		</div><br>
 
 		<div class="pure-g">
-			<div class="pure-u-1-4">
-				<div class="img-margin"><img src="./imgs/icepiration.png"></div>
+			<div class="pure-u-1 pure-u-md-1-6"><div class="img-margin"><img src="./imgs/icepiration.png"></div></div>
+			<div class="pure-u-1 pure-u-md-1-6 text-center">
 				<span class="font-lato font-lg">Icepiration</span><br>
 				<span class="font-lato font-md">Content Developer, Speaker</span><br>
 				<span class="font-lato">Summer 2015</span><br>
 				<span class="font-lato"><a href="http://icepiration.com/" target="_blank">icepiration.com</a></span>
 			</div>
-			<div class="pure-u-3-4">
+			<div class="pure-u-1 pure-u-md-2-3">
 				<span class="font-lato font-md">Responsible for creating and presenting the content for the technology portion of the technology and entrepreneurship bootcamp that ICEpiration held over the summer.</span>
 				<blockquote>"Shivam was proactive in frequently showing us his work product, ideas, and strategies and was good at taking feedback and constructive criticism. Mentoring Shivam was an absolute delight and we all learned some new things from him. He is an exemplary person, who is ready, willing and able to help at every opportunity."<br><span class="author">- Mukesh Patel, Founder of ICEpiration</span></blockquote>
 			</div>
@@ -329,31 +227,13 @@
 
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="https://use.fontawesome.com/81e93427cf.js"></script>
-<!--<script src="modernizr.js"></script>
-<script src="polyfills.js"></script>
-<script src="demo1.js"></script>-->
 
-<script>
+	<script>
 
-$("#nav-menu").click(function() {
-	$('#nav-main').toggleClass('shown');
-});
-
-	// smooth scroll: https://css-tricks.com/snippets/jquery/smooth-scrolling/
-	$(function() {
-		$('a[href*="#"]:not([href="#"])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html, body').animate({
-						scrollTop: target.offset().top
-					}, 1000);
-					return false;
-				}
-			}
-		});
+	$("#nav-menu").click(function() {
+		$('#nav-main').toggleClass('shown');
 	});
+
 	</script>
 
 	<!-- Credits
@@ -362,6 +242,8 @@ $("#nav-menu").click(function() {
 	- opener - https://unsplash.com/photos/sGblr5yVXiM - Jason Chen
 	- skills - https://unsplash.com/photos/jLwVAUtLOAQ - Dustin Lee
 	- experience - https://unsplash.com/photos/YpeBKo-iQjY - Kiley Mead
+
+	smooth scroll: https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
 	try this:; http://tympanus.net/codrops/2013/07/30/google-nexus-website-menu/
 
