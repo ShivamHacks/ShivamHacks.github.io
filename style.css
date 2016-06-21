@@ -8,6 +8,14 @@ html, body {
 	font-family: 'Work Sans';
 }
 
+/*body {
+	background: url("./imgs/city.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}*/
+
 #opener { background: url("./imgs/opener-background.jpeg"); font-family: 'Work Sans'; }
 #skills { background: url("./imgs/skills-background.jpeg"); }
 #experience { background: url("./imgs/experience-background.jpeg"); }
