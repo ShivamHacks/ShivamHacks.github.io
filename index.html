@@ -5,279 +5,252 @@
 
 	<link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Work+Sans">
 	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato'>
-	<!--<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans'>-->
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.12/slideout.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
 
-	<div id="nav-menu"><span><i class="fa fa-bars"></i></span></div>
 
-	<div id="nav-container">
+	<nav id="menu">
 		<div id="nav-main">
-			<span><a href="#aboutContent">About</a></span><br>
-			<span><a href="#skills">Skills</a></span><br>
+			<div class="img-margin"><img src="./imgs/me2.jpg"></div>
+			<span class="nav-link"><a href="#aboutContent">About</a></span><br>
+			<span class="nav-link"><a href="#skills">Skills</a></span><br>
 			<span><a href="https://github.com/ShivamHacks" target="_blank">Projects</a></span><br>
-			<span><a href="#experience">Experience</a></span><br>
-			<span><a href="#footer">Contact</a></span><br>
+			<span class="nav-link"><a href="#experience">Experience</a></span><br>
+			<span class="nav-link"><a href="#footer">Contact</a></span><br>
 			<span><a href="resume.pdf" target="_blank">Resume</a></span>
 		</div>
-	</div>
+	</nav>
 
-	<div id="opener" class="break-screen">
-		<div class="break-screen-content">
-			<div class="header">Shivam Agrawal</div>
+	<main id="panel">
+		<div id="opener" class="break-screen">
+			<div class="break-screen-content">
+				<div class="header">Shivam Agrawal</div>
+			</div>
 		</div>
-	</div>
 
-	<div id="aboutContent" class="content">
-		<div class="header text-center"><b>About Me</b></div><br>
-		<div class="pure-g">
-			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-5"><img src="./imgs/me.jpg"></div>
-			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-4-5">
-				<div class="text-margin">
-					<span class="font-lato font-md">Hi! I am Shivam Agrawal, and I am a programmer, a student, and, most of all, an explorer. I enjoy taking in the world and looking for ways to improve all of our lives. To do so, I have chosen to use technology as my primary tool. I hope to make the lives of everyone around me better through technology, and therefore, I have amassed several skills and gained significant experience in this area. If you have a project in mind, or just want to talk, scroll down for more info. :)
-					</span><br><br><br><br>
-					<div class="text-center">
-						<div class="pure-g">
-							<div class="pure-u-1-5"><i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i></div>
-							<div class="pure-u-1-5"><i class="fa fa-cogs fa-3x" aria-hidden="true"></i></div>
-							<div class="pure-u-1-5"><i class="fa fa-code fa-3x" aria-hidden="true"></i></div>
-							<div class="pure-u-1-5"><i class="fa fa-code-fork fa-3x" aria-hidden="true"></i></div>
-							<div class="pure-u-1-5"><i class="fa fa-refresh fa-3x" aria-hidden="true"></i></div>
+		<div id="aboutContent" class="content">
+			<div class="header text-center"><b>About Me</b></div><br>
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-5"><img src="./imgs/me.jpg"></div>
+				<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-4-5">
+					<div class="text-margin">
+						<span class="font-lato font-md">Hi! I am Shivam Agrawal, and I am a programmer, a student, and, most of all, an explorer. I enjoy taking in the world and looking for ways to improve all of our lives. To do so, I have chosen to use technology as my primary tool. I hope to make the lives of everyone around me better through technology, and therefore, I have amassed several skills and gained significant experience in this area. If you have a project in mind, or just want to talk, scroll down for more info. :)
+						</span><br><br><br><br>
+						<div class="text-center">
+							<div class="pure-g">
+								<div class="pure-u-1-5"><i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i></div>
+								<div class="pure-u-1-5"><i class="fa fa-cogs fa-3x" aria-hidden="true"></i></div>
+								<div class="pure-u-1-5"><i class="fa fa-code fa-3x" aria-hidden="true"></i></div>
+								<div class="pure-u-1-5"><i class="fa fa-code-fork fa-3x" aria-hidden="true"></i></div>
+								<div class="pure-u-1-5"><i class="fa fa-refresh fa-3x" aria-hidden="true"></i></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="break-screen" id="skills">
+			<div class="break-screen-content">
+				<div class="header">SKILLS</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+					<div class="codebox">
+						<div class="code-header">
+							<span>Languages.js</span><br>
+						</div>
+						<div class="code-text">
+							<span class="code-line">1. </span><span>NodeJS/Express</span><br>    		
+							<span class="code-line">2. </span><span>HTML/CSS</span><br>
+							<span class="code-line">3. </span><span>Javascript</span><br>
+							<span class="code-line">4. </span><span>Java</span><br>
+							<span class="code-line">5. </span><span>Python</span>
+
 						</div>
 					</div>
-
+				</div>
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+					<div class="codebox">
+						<div class="code-header">
+							<span>Cloud.js</span><br>
+						</div>
+						<div class="code-text">
+							<span class="code-line">1. </span><span>Amazon Web Services</span><br>
+							<span class="code-line">2. </span><span>Google Cloud Platform</span><br>
+							<span class="code-line">3. </span><span>Facebook Graph API</span><br>
+							<span class="code-line">4. </span><span>Facebook Messenger API</span><br>
+							<span class="code-line">5. </span><span>Heroku</span>
+						</div>
+					</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+					<div class="codebox">
+						<div class="code-header">
+							<span>Platforms.js</span><br>
+						</div>
+						<div class="code-text">
+							<span class="code-line">1. </span><span>Web</span><br>
+							<span class="code-line">2. </span><span>&thinsp;- Desktop</span><br>
+							<span class="code-line">3. </span><span>&thinsp;- Mobile</span><br>
+							<span class="code-line">4. </span><span>Android</span><br>
+							<span class="code-line">5. </span><span>Desktop</span>
+						</div>
+					</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+					<div class="codebox">
+						<div class="code-header">
+							<span>Tools.js</span><br>
+						</div>
+						<div class="code-text">
+							<span class="code-line">1. </span><span>Excel</span><br>
+							<span class="code-line">2. </span><span>Github</span><br>
+							<span class="code-line">3. </span><span>Slack</span><br>
+							<span class="code-line">4. </span><span>Terminal/Command Line</span><br>
+							<span class="code-line">5. </span><span>Google Drive</span>
+						</div>
+					</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+					<div class="codebox">
+						<div class="code-header">
+							<span>Math.js</span><br>
+						</div>
+						<div class="code-text">
+							<span class="code-line">1. </span><span>Calculus</span><br>
+							<span class="code-line">2. </span><span>Trigonometry</span><br>
+							<span class="code-line">3. </span><span>Geometry</span><br>
+							<span class="code-line">4. </span><span>Algebra</span><br>
+							<span class="code-line">5. </span><span>Probability</span>
+						</div>
+					</div>
+				</div> 
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+					<div class="codebox">
+						<div class="code-header">
+							<span>LearningNow.js</span><br>
+						</div>
+						<div class="code-text">
+							<span class="code-line">1. </span><span>Time Management</span><br>
+							<span class="code-line">2. </span><span>Machine Learning</span><br>
+							<span class="code-line">3. </span><span>Computer Vision</span><br>
+							<span class="code-line">4. </span><span>Multivariable Calculus</span><br>
+							<span class="code-line">5. </span><span>IOS App Development</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="break-screen" id="skills">
-		<div class="break-screen-content">
-			<div class="header">SKILLS</div>
-		</div>
-	</div>
-
-	<div class="content">
-		<div class="pure-g">
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-				<div class="codebox">
-					<div class="code-header">
-						<span>Languages.js</span><br><!-- and libraries -->
-					</div>
-					<div class="code-text">
-						<span class="code-line">1. </span><span>NodeJS/Express</span><br>    		
-						<span class="code-line">2. </span><span>HTML/CSS/JS</span><br>
-						<span class="code-line">3. </span><span>&thinsp;- JQuery</span><br>
-						<span class="code-line">4. </span><span>&thinsp;- Bootstrap</span><br>
-						<span class="code-line">5. </span><span>&thinsp;- Underscore</span><br>
-						<span class="code-line">6. </span><span>Java</span>
-					</div>
-				</div>
-			</div>
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-				<div class="codebox">
-					<div class="code-header">
-						<span>Cloud.js</span><br>
-					</div>
-					<div class="code-text">
-						<span class="code-line">1. </span><span>Amazon Web Services</span><br>
-						<span class="code-line">2. </span><span>&thinsp;- DynamoDB and S3</span><br>
-						<span class="code-line">3. </span><span>&thinsp;- Elastic Beanstalk</span><br>
-						<span class="code-line">4. </span><span>Google Cloud Messaging</span><br>
-						<span class="code-line">5. </span><span>Facebook Messenger API</span><br>
-						<span class="code-line">6. </span><span>Heroku</span>
-					</div>
-				</div>
-			</div>
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-				<div class="codebox">
-					<div class="code-header">
-						<span>Platforms.js</span><br>
-					</div>
-					<div class="code-text">
-						<span class="code-line">1. </span><span>Web</span><br>
-						<span class="code-line">2. </span><span>&thinsp;- Desktop</span><br>
-						<span class="code-line">3. </span><span>&thinsp;- Mobile</span><br>
-						<span class="code-line">4. </span><span>Android</span><br>
-						<span class="code-line">5. </span><span>Desktop</span><br>
-						<span class="code-line">6. </span><span>&thinsp;- Java Application</span><br>
-					</div>
-				</div>
-			</div>
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-				<div class="codebox">
-					<div class="code-header">
-						<span>Tools.js</span><br>
-					</div>
-					<div class="code-text">
-						<span class="code-line">1. </span><span>Excel</span><br>
-						<span class="code-line">2. </span><span>Github</span><br>
-						<span class="code-line">3. </span><span>Slack</span><br>
-						<span class="code-line">4. </span><span>Terminal/Command Line</span><br>
-						<span class="code-line">5. </span><span>Sublime Text</span><br>
-						<span class="code-line">6. </span><span>Google Drive</span>
-					</div>
-				</div>
-			</div>
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-				<div class="codebox">
-					<div class="code-header">
-						<span>Math.js</span><br>
-					</div>
-					<div class="code-text">
-						<span class="code-line">1. </span><span>Calculus</span><br>
-						<span class="code-line">2. </span><span>Trigonometry</span><br>
-						<span class="code-line">3. </span><span>Geometry</span><br>
-						<span class="code-line">4. </span><span>Algebra</span><br>
-						<span class="code-line">5. </span><span>Probability</span><br>
-						<span class="code-line">6. </span><span>Algorithms</span>
-					</div>
-				</div>
-			</div> 
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-				<div class="codebox">
-					<div class="code-header">
-						<span>Science.js</span><br>
-					</div>
-					<div class="code-text">
-						<span class="code-line">1. </span><span>Biology</span><br>
-						<span class="code-line">2. </span><span>Chemistry</span><br>
-						<span class="code-line">3. </span><span>Physics</span><br>
-						<span class="code-line">4. </span><span>Economics</span><br>
-						<span class="code-line">5. </span><br>
-						<span class="code-line">6. </span>
-					</div>
-				</div>
-			</div>
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-				<div class="codebox">
-					<div class="code-header">
-						<span>Miscellaneous.js</span><br>
-					</div>
-					<div class="code-text">
-						<span class="code-line">1. </span><span>Public Speaking</span><br>
-						<span class="code-line">2. </span><span>Teaching</span><br>
-						<span class="code-line">3. </span><span>Tennis</span><br>
-						<span class="code-line">4. </span><span>Ping Pong</span><br>
-						<span class="code-line">5. </span><span>Badminton</span><br>
-						<span class="code-line">6. </span>
-					</div>
-				</div>
-			</div> 
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-				<div class="codebox">
-					<div class="code-header">
-						<span>LearningNow.js</span><br>
-					</div>
-					<div class="code-text">
-						<span class="code-line">1. </span><span>Time Management</span><br>
-						<span class="code-line">2. </span><span>Machine Learning</span><br>
-						<span class="code-line">3. </span><span>Multivariable Calculus</span><br>
-						<span class="code-line">4. </span><span>IOS App Development</span><br>
-						<span class="code-line">5. </span><br>
-						<span class="code-line">6. </span>
-					</div>
-				</div>
-			</div> 
-			<!-- Don't forget to include public speaking -->
-		</div>
-	</div>
-
-	<div class="break-screen" id="experience">
-		<div class="break-screen-content">
-			<div class="header white">EXPERIENCE</div>
-		</div>
-	</div>
-
-	<div class="content">
-		<hr><div class="header text-center">Conferences and Competitions</div><hr>
-		<div class="pure-g">
-			<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/rumun2.jpg"></div></div>
-			<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/philmun2.jpeg"></div></div>
-			<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/rmc4.png"></div></div>
-			<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/nhsmun.png"></div></div>
-			<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/hackru2.jpg"></div></div>
-			<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/hackerrank.jpg"></div></div>
-		</div>
-	</div>
-
-	<div class="content" style="background-color:#282828;">
-		<div class="text-center white font-lg">
-			<span>Number of Hackerrank problems completed: 15</span><br><br>
-			<span><a class="teal" href="https://www.hackerrank.com/ShivamAgrawal9" target="_blank">Hackerrank Profile</a></span>
-			<span> | </span>
-			<span><a class="teal" href="https://github.com/ShivamHacks/HackerRank" target="_blank">Solutions on Github</a></span>
-		</div>
-	</div>
-
-	<div class="content" style="background-color:#FFFFFF;">
-		<div class="header text-center">Work Experience</div><br><br>
-
-		<div class="pure-g">
-			<div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/gnext.png"></div></div>
-			<div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-6 text-center">
-				<span class="font-lato font-lg">GNext Education</span><br>
-				<span class="font-lato font-md">Web Developer, Organizer</span><br>
-				<span class="font-lato">Fall 2015</span><br>
-				<span class="font-lato"><a href="http://gnextedu.com/" target="_blank">gnextedu.com</a></span>
-			</div>
-			<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-2-3">
-				<span class="font-lato font-md">Created website for SALL Champs, a robotics competition hosted by GNext Education. Helped organize and run the competition.</span>
-				<blockquote>"Shivam was assigned to develop the website of our project call SALL champs (Robotics Competition), he has been working hard on this project. He has impressed us with his creativity, knowledge about the subject, taking initiatives very detailed oriented and is one hardworking individual. I wish him all the very best in his future endeavors."<br><span class="author">- Ekta Gupta, Founder of GNext Education</span></blockquote>
-			</div>
-		</div><br><hr><br>
-
-		<div class="pure-g">
-			<div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/icepiration2.png"></div></div>
-			<div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-6 text-center">
-				<span class="font-lato font-lg">Icepiration</span><br>
-				<span class="font-lato font-md">Content Developer, Speaker</span><br>
-				<span class="font-lato">Summer 2015</span><br>
-				<span class="font-lato"><a href="http://icepiration.com/" target="_blank">icepiration.com</a></span>
-			</div>
-			<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-2-3">
-				<span class="font-lato font-md">Responsible for creating and presenting the content for the technology portion of the technology and entrepreneurship bootcamp that ICEpiration held over the summer.</span>
-				<blockquote>"Shivam was proactive in frequently showing us his work product, ideas, and strategies and was good at taking feedback and constructive criticism. Mentoring Shivam was an absolute delight and we all learned some new things from him. He is an exemplary person, who is ready, willing and able to help at every opportunity."<br><span class="author">- Mukesh Patel, Founder of ICEpiration</span></blockquote>
+		<div class="break-screen" id="experience">
+			<div class="break-screen-content">
+				<div class="header white">EXPERIENCE</div>
 			</div>
 		</div>
-	</div>
 
-	<div style="width:100%;padding:0;margin:0;">
-		<img src="./imgs/building-silhouette.png" style="width:100%;margin:0;padding:0;">
-	</div>
-
-	<div class="content" id="footer">
-		<div class="pure-g">
-			<div class="pure-u-1-4"><a href="mailto:shivamagrawalhacks@gmail.com" target="_blank"><div class="text-center red">
-				<i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
-			</div></a></div>
-			<div class="pure-u-1-4"><a href="https://github.com/ShivamHacks/" target="_blank"><div class="text-center olive">
-				<i class="fa fa-github fa-3x" aria-hidden="true"></i>
-			</div></a></div>
-			<div class="pure-u-1-4"><a href="https://www.facebook.com/profile.php?id=100008299175692" target="_blank"><div class="text-center blue">
-				<i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-			</div></a></div>
-			<div class="pure-u-1-4"><a href="#" target="_blank"><div class="text-center fuchsia">
-				<i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
-			</div></a></div>
+		<div class="content">
+			<hr><div class="header text-center">Conferences and Competitions</div><hr>
+			<div class="pure-g">
+				<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/logos/rumun.jpg"></div></div>
+				<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/logos/philmun.jpeg"></div></div>
+				<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/logos/rmc.png"></div></div>
+				<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/logos/nhsmun.png"></div></div>
+				<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/logos/hackru.jpg"></div></div>
+				<div class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/logos/pennapps.png"></div></div>
+			</div>
 		</div>
-	</div>
+
+		<!-- NEED TO EDIT -->
+		<div class="content" style="background-color:#282828;">
+			<div class="text-center white font-lg">
+				<span>Number of Hackerrank problems completed: 15</span><br><br>
+				<span><a class="teal" href="https://www.hackerrank.com/ShivamAgrawal9" target="_blank">Hackerrank Profile</a></span>
+				<span> | </span>
+				<span><a class="teal" href="https://github.com/ShivamHacks/HackerRank" target="_blank">Solutions on Github</a></span>
+			</div>
+		</div>
+
+		<div class="content" style="background-color:#FFFFFF;">
+			<div class="header text-center">Work Experience</div><br><br>
+
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/gnext.png"></div></div>
+				<div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-6 text-center">
+					<span class="font-lato font-lg">GNext Education</span><br>
+					<span class="font-lato font-md">Web Developer, Organizer</span><br>
+					<span class="font-lato">Fall 2015</span><br>
+					<span class="font-lato"><a href="http://gnextedu.com/" target="_blank">gnextedu.com</a></span>
+				</div>
+				<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-2-3">
+					<span class="font-lato font-md">Created website for SALL Champs, a robotics competition hosted by GNext Education. Helped organize and run the competition.</span>
+					<blockquote>"Shivam was assigned to develop the website of our project call SALL champs (Robotics Competition), he has been working hard on this project. He has impressed us with his creativity, knowledge about the subject, taking initiatives very detailed oriented and is one hardworking individual. I wish him all the very best in his future endeavors."<br><span class="author">- Ekta Gupta, Founder of GNext Education</span></blockquote>
+				</div>
+			</div><br><hr><br>
+
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-6"><div class="img-margin"><img src="./imgs/icepiration2.png"></div></div>
+				<div class="pure-u-1 pure-u-md-1-5 pure-u-lg-1-6 text-center">
+					<span class="font-lato font-lg">Icepiration</span><br>
+					<span class="font-lato font-md">Content Developer, Speaker</span><br>
+					<span class="font-lato">Summer 2015</span><br>
+					<span class="font-lato"><a href="http://icepiration.com/" target="_blank">icepiration.com</a></span>
+				</div>
+				<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-2-3">
+					<span class="font-lato font-md">Responsible for creating and presenting the content for the technology portion of the technology and entrepreneurship bootcamp that ICEpiration held over the summer.</span>
+					<blockquote>"Shivam was proactive in frequently showing us his work product, ideas, and strategies and was good at taking feedback and constructive criticism. Mentoring Shivam was an absolute delight and we all learned some new things from him. He is an exemplary person, who is ready, willing and able to help at every opportunity."<br><span class="author">- Mukesh Patel, Founder of ICEpiration</span></blockquote>
+				</div>
+			</div>
+		</div>
+
+		<div style="width:100%;padding:0;margin:0;">
+			<img src="./imgs/building-silhouette.png" style="width:100%;margin:0;padding:0;">
+		</div>
+
+		<div class="content" id="footer">
+			<div class="pure-g">
+				<div class="pure-u-1-4"><a href="mailto:shivamagrawalhacks@gmail.com" target="_blank"><div class="text-center red">
+					<i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+				</div></a></div>
+				<div class="pure-u-1-4"><a href="https://github.com/ShivamHacks/" target="_blank"><div class="text-center olive">
+					<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+				</div></a></div>
+				<div class="pure-u-1-4"><a href="https://www.facebook.com/profile.php?id=100008299175692" target="_blank"><div class="text-center blue">
+					<i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+				</div></a></div>
+				<div class="pure-u-1-4"><a href="https://www.linkedin.com/in/shivam-agrawal-4166b1126" target="_blank"><div class="text-center fuchsia">
+					<i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+				</div></a></div>
+			</div>
+		</div>
+	</main>
+
+	<div id="nav-menu"><span><i class="fa fa-bars"></i></span></div>
 
 	<script>
 
-	$("#nav-menu").on('click', function() {
-		$('#nav-main').toggleClass('shown');
-		//document.getElementById("nav-main").classList.toggle('shown');
-	});
+		var slideout = new Slideout({
+			'panel': document.getElementById('panel'),
+			'menu': document.getElementById('menu'),
+			'padding': 256,
+			'tolerance': 70
+		});
 
-	
+		$("#nav-menu").on('click', function() {
+			slideout.toggle();
+		});
 
 	</script>
 
@@ -288,22 +261,7 @@
 	- skills - https://unsplash.com/photos/jLwVAUtLOAQ - Dustin Lee
 	- experience - https://unsplash.com/photos/YpeBKo-iQjY - Kiley Mead
 
-	smooth scroll: https://css-tricks.com/snippets/jquery/smooth-scrolling/
-
-	try this:; http://tympanus.net/codrops/2013/07/30/google-nexus-website-menu/
-
-
-	MAKE SURE TO LAZY LOAD IMAGES!!!
-
-	Responsive Nav Bar
-
-	Include clubs and athletics and sciences in skills section
-
-	Only show skills and experience
-
-	Put alts on images!!! to improve google ranking
-
--->
+	-->
 
 </body>
 </html>
