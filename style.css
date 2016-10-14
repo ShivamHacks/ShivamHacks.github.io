@@ -57,7 +57,7 @@ html, body {
 }
 
 
-#experience { 
+/*#experience { 
 	background: url("./imgs/experience-background.jpeg"); 
 	background-size: calc(100% + 50px) calc(75vh + 100px);
 	background-repeat: no-repeat;
@@ -65,7 +65,7 @@ html, body {
 	width: 100%;
 	display: table;
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.9);
-}
+}*/
 
 
 #parallaxImg {
@@ -304,4 +304,22 @@ blockquote .author {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+
+/* http://codepen.io/anon/pen/amjNaZ */
+/* Clip text element */
+.clip-text {
+    font-size: 6em;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    background-image: inherit;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.clip-text_one {
+    background-image: url(http://lorempixel.com/480/200/city/9/cc);
 }
